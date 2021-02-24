@@ -70,9 +70,9 @@ async function getFamily(member, card) {
     `
 }
 
-let xs = Number(0);
+let xs = Number(1);
 
-//getMiniCardsPage()
+getMiniCardsPage()
 async function getMiniCardsPage() {
     const include = await fetch(API_URL + "character?page=" + xs);
     const info = await include.json();
@@ -130,8 +130,6 @@ function createMiniCards(elem) {
 
     `
 }
-// Inıt "Other Things" Cards
-getMiniCardsPage();
 
 const moreCardsBtn = document.getElementById("more-cards-button");
 moreCardsBtn.onclick = ()=> {
