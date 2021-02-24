@@ -62,12 +62,6 @@
   cursor: grabbing;
 }
 
-.grabbing .slide-items{
-  transform: scale(0.950);
-  box-shadow: 0 5px 10px -1px var(--shadow);
-}
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
   .slide-items{
