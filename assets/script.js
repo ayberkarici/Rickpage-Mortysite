@@ -10,18 +10,16 @@ const footerAuthor = document.getElementById('author-info');
 //const LOCATION_API = "https://rickandmortyapi.com/api/location";
 //const EPISODE_API = "https://rickandmortyapi.com/api/episode"
 
-location.replace("https://" + location.host);
+window.scrollTo(0, 0);
 
-mainContainer.addEventListener("load", ()=> {
-    setTimeout(() => {
-        const loader = document.querySelector('loader') 
-        const loaderGif = document.querySelector('loader-gif') 
-     
-        loader.classList.add("hidden")
-        loaderGif.classList.add("hidden")
-    }, 4000);
-});
 
+setTimeout(() => {
+    const loader = document.querySelector('.loader') 
+    const loaderGif = document.querySelector('.loader-gif') 
+ 
+    loader.classList.add("hidden")
+    loaderGif.classList.add("hidden")
+}, 4000);
 
 
 let x = 1;
